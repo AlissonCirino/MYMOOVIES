@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
-const dotenv = requirw("dotenv");
+const dotenv = require("dotenv");
 
 dotenv.config();
 const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD } = process.env;
 
-const sql = Pool({
+const db = new Pool({
   host: PGHOST,
   database: PGDATABASE,
   user: PGUSER,
@@ -15,4 +15,4 @@ const sql = Pool({
   },
 });
 
-modulo.exports = db;
+module.exports = db;
