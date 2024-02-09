@@ -1,5 +1,5 @@
 const MooviesController = {
-    findAll(req, res) {
+    async findAll(req, res) {
        
         /**
         * Aqui entraria a regra de persistência do banco de dados
@@ -22,7 +22,7 @@ const MooviesController = {
             },
         ]);
     },
-    find(req, res) {
+    async find(req, res) {
         const { id } = req.params;
         
         /**
