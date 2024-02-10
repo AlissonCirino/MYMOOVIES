@@ -36,3 +36,9 @@ CREATE TABLE moovies (
     realease_date VARCHAR(255)
 );
 ```
+# Melhorias para api
+
+  ````
+  - Criar endpoints para atualizar registros
+  - Criar validação de criação de moovies (validação de categoria existente)`
+  ````
